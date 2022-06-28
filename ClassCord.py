@@ -302,8 +302,8 @@ async def attendance(message, *args):
     await message.author.send(att_msg)
 
 @bot.command()
-async def hello(message, *args):
-    await message.send("HOLA")
+async def time(message, *args):
+    await message.send(datetime.now())
 
 @bot.command()
 async def due(message, work_arg):
